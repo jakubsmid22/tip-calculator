@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script defer src="./index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F2F2F2] flex min-h-screen justify-center items-center">
+    <main class="bg-white p-5 flex flex-col gap-5 rounded-md">
+        <h1 class="text-3xl font-bold">Tip Calculator</h1>
+        <div class="flex flex-col">
+            <label for="bill">Bill:</label>
+            <input class="border pl-2 py-1" min="0" type="number" id="bill">
+        </div>
+        <div class="flex flex-col">
+            <label for="tip">Tip %:</label>
+            <input class="border pl-2 py-1" min="0" type="number" id="tip">
+        </div>
+
+        <button id="calcBtn" class="border-2 border-black py-2 hover:bg-black hover:text-white transition-all duration-500">Calculate</button>
+
+        <p>Total: <span class="font-bold" id="total">$000</span></p>
+    </main>
+</body>
+</html>
